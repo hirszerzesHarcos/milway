@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Jelszóvédett Övezet"
+AuthUserFile /home/milwyhu1/public_html/proba/.htpasswd
+require valid-user

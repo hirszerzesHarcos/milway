@@ -1,0 +1,18 @@
+﻿.elsosor {
+  background-color: #ccc;
+}
+#tetel, #mennyiseg {
+  text-align: left;
+}
+#tetel {
+  width: 150px;
+}
+#mennyiseg {
+  width: 80px;
+}
+.mennyiseg {
+  text-align: center;
+}
+.gomb {
+  text-align: center;
+}

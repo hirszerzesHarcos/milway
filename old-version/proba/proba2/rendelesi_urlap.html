@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3">
+    <meta charset="utf-8">
+    <title>Bob autóalkatrészek</title>
+    <link rel="stylesheet" href="rendelesi_urlap.css">
+    <!--script language="javascript" type="text/javascript" src="scriptek/index.js"></script-->
+  </head>
+  <body>
+    <h1>Bob autóalkatrészek</h1>
+    <form action="rendeles_feldolgozasa.php" method="post">
+      <table>
+        <tr class="elsosor">
+          <th id="tetel">Tétel</th>
+          <th id="mennyiseg">Mennyiség</th>
+        </tr>
+        <tr>
+          <td><label for="abroncs_db">Gumiabroncs</label></td>
+          <td class="mennyiseg"><input type="text" name="abroncs_db" id="abroncs_db" size="3" maxlength="3"></td>
+        </tr>
+        <tr>
+          <td><label for="olaj_db">Olaj</label></td>
+          <td class="mennyiseg"><input type="text" name="olaj_db" id="olaj_db" size="3" maxlength="3"></td>
+        </tr>
+        <tr>
+          <td><label for="gyertya_db">Gyújtógyertya</label></td>
+          <td class="mennyiseg"><input type="text" name="gyertya_db" id="gyertya_db" size="3" maxlength="3"></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="gomb"><input type="submit" value="Rendelés elküldése"></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

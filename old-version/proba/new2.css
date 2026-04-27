@@ -1,0 +1,15 @@
+﻿div {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+#div1 {
+  background-color: #f00;
+  left: 0;
+  top: 150px;
+}
+#div2 {
+  background-color: #0f0;
+  left: 200px;
+  top: 150px;
+}

@@ -1,0 +1,25 @@
+﻿body {
+  background: #CC883D url("../kepek/index/index-hatter.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+#diavetites {
+  margin: 0;
+	padding: 0;
+/*	border: 2px solid #ccc;*/
+}
+#diavetites img{
+	margin: 0;
+	padding: 0;
+	
+}
+#logok {
+  float: right;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+}
+#logok img {
+  height: 112px;
+  width: auto;
+}

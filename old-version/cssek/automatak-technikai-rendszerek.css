@@ -1,0 +1,32 @@
+﻿body {
+  background: #CC883D url("../kepek/automatak-technikai-rendszerek/automatak-technikai-rendszerek-hatter.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.automata {
+  width: 100%;
+  background-color: #fff;
+  border-top: #ddd 5px solid;
+  /*border-bottom: #ddd 5px solid;*/
+  overflow: hidden;
+}
+.automata h2 {
+  color: #000;
+  text-align: right;
+  margin: 5px 10px;
+  text-align: bottom;
+}
+table {
+  width: 100%;
+}
+#baloszlop {
+  width: 50%;
+}
+#jobboszlop {
+  width: 50%;
+}
+.jobb {
+  text-align: right;
+}
+td {
+  padding: 0 2%;
+}

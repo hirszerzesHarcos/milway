@@ -1,0 +1,11 @@
+﻿#debug ul {
+	border: 1px solid #500;
+	list-style-type: none;
+	padding: 0;
+}
+#debug li{
+	background-color: #a00;
+	margin: 3px;
+	padding: 0 2px;
+	color: #fff;
+}

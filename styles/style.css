@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #aaa;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 12px 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+button.outline {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.flow {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px;
+    font-size: 20px;
+    color: #888;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 40px;
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+}
+
+.trust {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+
+.contact-card {
+    max-width: 300px;
+}

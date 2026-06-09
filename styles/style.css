@@ -22,7 +22,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.theme-toggle {
+/*.theme-toggle {
   z-index: 1;
   position: fixed;
   top: 20px;
@@ -32,34 +32,40 @@ body {
   padding: 10px;
   cursor: pointer;
   border-radius: 10px;
-}
+}*/
 
 .hero {
-  max-width: 1200px;
-  margin: auto;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  /*flex-direction: column;
+  justify-content: center;
   gap: 10px;
-  text-align: center;
+  text-align: center;*/
+}
+
+.hero-content {
+  max-width: 700px;
 }
 
 .hero h1 {
-  max-width: 900px;
+  margin: 0;
   font-size: clamp(3rem, 8vw, 6rem);
-  line-height: .95;
+  line-height: 0.95;
   letter-spacing: -0.05em;
-  /*font-size: 64px;
-  letter-spacing: -1px;*/
 }
 
 .hero p {
+  margin-top: 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.4rem);
   color: var(--muted);
+  max-width: 40ch;
 }
 
-.buttons {
+/*.buttons {
   margin: 20px;
 }
 
@@ -136,6 +142,10 @@ button.outline {
 .contact-card {
   max-width: 300px;
 }
+
+*
+
+/
 
 .reveal {
   opacity: 0;

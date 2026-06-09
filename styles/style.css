@@ -35,6 +35,8 @@ body {
 }
 
 .hero {
+  max-width: 1200px;
+  margin: auto;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -45,8 +47,12 @@ body {
 }
 
 .hero h1 {
-  font-size: 64px;
-  letter-spacing: -1px;
+  max-width: 900px;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: .95;
+  letter-spacing: -0.05em;
+  /*font-size: 64px;
+  letter-spacing: -1px;*/
 }
 
 .hero p {
@@ -76,6 +82,15 @@ button.outline {
   background-color: transparent;
   border: 1px solid var(--border);
   color: var(--text);
+}
+
+.about {
+  display: grid;
+  grid-template-columns:300px 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 120px 40px;
 }
 
 .flow {

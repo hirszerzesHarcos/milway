@@ -1,0 +1,23 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 64 64"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+>
+  <!-- Gőz -->
+  <path d="M22 12 C18 16 18 20 22 24"/>
+  <path d="M32 8 C28 14 28 20 32 26"/>
+  <path d="M42 12 C38 16 38 20 42 24"/>
+
+  <!-- Csésze -->
+  <path d="M14 24 H46 V38 C46 46 41 50 32 50 H28 C19 50 14 46 14 38 Z"/>
+
+  <!-- Fül -->
+  <path d="M46 28 H50 C56 28 56 40 50 40 H46"/>
+
+  <!-- Alj -->
+  <path d="M10 50 H50"/>
+</svg>

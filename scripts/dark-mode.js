@@ -22,4 +22,8 @@ document.querySelectorAll(".reveal").forEach(el => {
   observer.observe(el);
 });
 
-document.querySelector(".theme-toggle").addEventListener("click", toggleTheme);
+/*document.querySelector(".theme-toggle").addEventListener("click", toggleTheme);*/
+document.documentElement.body.addEventListener("resize", function () {
+  document.documentElement.style.backgroundColor = "blue";
+  document.getElementById("adat").innerHTML = window.innerWidth + " x " + window.innerHeight;
+})

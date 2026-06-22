@@ -22,8 +22,12 @@ document.querySelectorAll(".reveal").forEach(el => {
   observer.observe(el);
 });
 
+function dispSize() {
+  document.body.style.backgroundColor = "blue";
+  console.log("valami");
+  document.getElementById("adat").innerHTML = "valami " + window.innerWidth + " x " + window.innerHeight;
+}
+
 /*document.querySelector(".theme-toggle").addEventListener("click", toggleTheme);*/
-document.documentElement.body.addEventListener("resize", function () {
-  document.documentElement.style.backgroundColor = "blue";
-  document.getElementById("adat").innerHTML = window.innerWidth + " x " + window.innerHeight;
-})
+console.log(document.body);
+window.addEventListener("resize", dispSize);

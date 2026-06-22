@@ -37,25 +37,14 @@ body {
 
 .hero {
   min-height: 100vh;
-  max-width: 1400px;
   display: flex;
   align-items: center;
-  /*padding: 4rem 2rem;*/
-  /*max-width: 1200px;*/
-  margin: 0 auto;
-  /*flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  text-align: center;*/
+  padding: 2rem;
   /*background-image: linear-gradient(90deg, rgba(21, 21, 21, .95) 0%, rgba(21, 21, 21, .95) 40%, rgba(21, 21, 21, .6) 60%, rgba(21, 21, 21, .0) 100%), url(/assets/hero-background.webp);*/
   background-image: linear-gradient(to right, rgb(20 21 20 / 95%) 30%, transparent 95%, rgb(20 21 20 / 100%) 100%), url(/assets/hero-background.webp);
   background-repeat: no-repeat, no-repeat;
   background-position: right, right bottom;
   background-size: cover;
-}
-
-.hero-content {
-  max-width: 60%;
 }
 
 .hero h1 {
@@ -184,19 +173,25 @@ button.btn-primary {
  */
 
 @media screen and (min-width: 768px) {
-  body {
-    background-color: white;
+  .hero {
+    color: black;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  body {
-    background-color: #8AC007;
+  .hero {
+    color: #8AC007;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  body {
-    background-color: red;
+  .hero {
+    color: red;
   }
+}
+
+#adat {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

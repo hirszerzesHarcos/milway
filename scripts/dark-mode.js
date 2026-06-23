@@ -23,7 +23,6 @@ document.querySelectorAll(".reveal").forEach(el => {
 });
 
 function dispSize() {
-  document.body.style.backgroundColor = "blue";
   console.log("valami");
   document.getElementById("adat").innerHTML = "valami " + window.innerWidth + " x " + window.innerHeight;
 }

@@ -17,7 +17,7 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background-color: /*var(--bg);*/ rgba(20, 21, 20, .95);
+  background-color: rgb(20 21 20); /*var(--bg);*/
   color: var(--text);
   transition: all 0.3s ease;
 
@@ -39,25 +39,36 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 2rem;
-  /*background-image: linear-gradient(90deg, rgba(21, 21, 21, .95) 0%, rgba(21, 21, 21, .95) 40%, rgba(21, 21, 21, .6) 60%, rgba(21, 21, 21, .0) 100%), url(/assets/hero-background.webp);*/
-  background-image: linear-gradient(to right, rgb(20 21 20 / 95%) 30%, transparent 95%, rgb(20 21 20 / 100%) 100%), url(/assets/hero-background.webp);
+  background-image: linear-gradient(to right, rgb(20 21 20 / 100%), rgb(20 21 20 / 10%) 30%, rgb(20 21 20 / 10%) 70%, rgb(20 21 20 / 10%) 95%, rgb(20 21 20 / 100%)), url(/assets/hero-background.webp);
   background-repeat: no-repeat, no-repeat;
   background-position: right, right bottom;
   background-size: cover;
 }
 
-.hero h1 {
-  margin: 0;
-  font-size: clamp(3rem, 5vw, 4rem);
-  line-height: 0.95;
-  letter-spacing: -0.05em;
-  /*border: 1px solid red;*/
-  text-shadow: 0 0 5px #f9c177, 0 0 10px #f9c177, 0 0 15px #f9c177;
-  animation: pulzal 3s infinite alternate;
+.hero-content {
+  margin: 0 2rem;
 }
 
-@keyframes pulzal {
+.hero h1 {
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+
+
+}
+
+.hero h1 span {
+  color: #b39060;
+}
+
+.hero h1 > :not(span) {
+  color: red;
+  text-shadow: 0 0 5px #f9c177, 0 0 10px #f9c177, 0 0 15px #f9c177;
+  animation: pulsating 3s infinite ease-in-out alternate;
+}
+
+@keyframes pulsating {
   0% {
     text-shadow: 0 0 5px #f9c177, 0 0 10px #f9c177, 0 0 15px #f9c177;
   }
@@ -70,13 +81,14 @@ body {
   margin-top: 1.5rem;
   font-size: clamp(1rem, 2vw, 1.4rem);
   color: var(--muted);
-  max-width: 40ch;
+  /*  max-width: 40ch;*/
 }
+
 
 /*.buttons {
   margin: 20px;
 }
-
+*/
 button {
   margin: 5px;
   padding: 12px 22px;
@@ -88,19 +100,20 @@ button {
   transition: all 0.2s ease;
 }
 
-button:hover {
-  transform: translateY(-2px);
+button.btn-primary {
+  background-color: rgb(170 140 100);
 }
 
-button.outline {
+button.btn-secondary {
   background-color: transparent;
   border: 1px solid var(--border);
   color: var(--text);
 }
- */
-button.btn-primary {
-  background-color: rgb(160 140 100);
+
+button:hover {
+  transform: translateY(-2px) scale(1.03);
 }
+
 
 /*
 .about {
@@ -173,25 +186,26 @@ button.btn-primary {
  */
 
 @media screen and (min-width: 768px) {
-  .hero {
-    color: black;
+  .hero-content {
+    width: 70%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .hero {
-    color: #8AC007;
+  .hero-content {
+    width: 60%;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .hero {
-    color: red;
+  body {
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
 #adat {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 }

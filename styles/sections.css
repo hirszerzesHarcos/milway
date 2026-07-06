@@ -1,0 +1,202 @@
+.hero {
+
+  position: relative;
+
+  min-height: 100svh;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+}
+
+.hero::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background-image: linear-gradient(
+      90deg,
+      rgba(20, 21, 20, 1) 0%,
+      rgba(20, 21, 20, .96) 28%,
+      rgba(20, 21, 20, .70) 42%,
+      rgba(20, 21, 20, .15) 62%,
+      rgba(20, 21, 20, .05) 100%
+  ),
+  url("../assets/hero-background.webp");
+
+  background-size: cover,
+  cover;
+
+  background-position: center,
+  right center;
+
+  z-index: -2;
+
+}
+
+.hero::after {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: radial-gradient(
+      circle at center,
+      transparent 55%,
+      rgba(0, 0, 0, .35)
+  );
+
+  pointer-events: none;
+
+}
+
+.hero-layout {
+
+  display: flex;
+
+  align-items: center;
+
+  min-height: 100svh;
+
+}
+
+.hero-content {
+
+  max-width: var(--content-width);
+
+  padding-block: 4rem;
+
+}
+
+.hero-kicker {
+
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  color: var(--color-gold);
+
+  font-size: .85rem;
+
+  letter-spacing: .22em;
+
+  text-transform: uppercase;
+
+}
+
+.hero-title {
+
+  font-size: clamp(
+      3rem,
+      7vw,
+      6.2rem
+  );
+
+  line-height: .92;
+
+  letter-spacing: -.05em;
+
+  font-weight: 700;
+
+  max-width: 11ch;
+
+}
+
+.hero-title span {
+
+  color: var(--color-gold);
+
+}
+
+.hero-description {
+
+  margin-top: 2rem;
+
+  max-width: 34ch;
+
+  color: var(--color-muted);
+
+  font-size: clamp(
+      1.05rem,
+      2vw,
+      1.35rem
+  );
+
+}
+
+.hero-actions {
+
+  display: flex;
+
+  gap: 1rem;
+
+  margin-top: 3rem;
+
+  flex-wrap: wrap;
+
+}
+
+.btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: .6rem;
+
+  padding: .95rem 1.6rem;
+
+  border-radius: 999px;
+
+  transition: transform var(--transition),
+  background var(--transition),
+  color var(--transition),
+  border-color var(--transition);
+
+}
+
+.btn-primary {
+
+  background: var(--color-gold);
+
+  color: #141514;
+
+  font-weight: 600;
+
+}
+
+.btn-primary:hover {
+
+  background: var(--color-gold-light);
+
+  transform: translateY(-3px);
+
+}
+
+.btn-secondary {
+
+  border: 1px solid var(--color-border);
+
+  color: white;
+
+  backdrop-filter: blur(12px);
+
+}
+
+.btn-secondary:hover {
+
+  background: rgba(255, 255, 255, .06);
+
+  transform: translateY(-3px);
+
+}

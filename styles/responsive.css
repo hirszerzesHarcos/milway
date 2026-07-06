@@ -47,3 +47,19 @@
   }
 
 }
+
+@media (max-width: 1023px) {
+
+  .about-grid {
+
+    grid-template-columns:1fr;
+
+  }
+
+  .section-intro {
+
+    position: static;
+
+  }
+
+}

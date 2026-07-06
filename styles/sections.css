@@ -154,7 +154,8 @@
 
   padding: .95rem 1.6rem;
 
-  border-radius: 999px;
+  border-radius: 5px;
+  font-size: 1.1em;
 
   transition: transform var(--transition),
   background var(--transition),
@@ -196,5 +197,79 @@
   background: rgba(255, 255, 255, .06);
 
   transform: translateY(-3px);
+
+}
+
+.about {
+
+  position: relative;
+
+}
+
+.about-grid {
+
+  display: grid;
+
+  grid-template-columns:
+
+        280px
+
+        minmax(0, 1fr);
+
+  gap: clamp(3rem, 6vw, 8rem);
+
+}
+
+.section-intro {
+
+  align-self: start;
+
+  position: sticky;
+
+  top: 8rem;
+
+}
+
+.section-kicker {
+
+  color: var(--color-gold);
+
+  text-transform: uppercase;
+
+  letter-spacing: .2em;
+
+  font-size: .8rem;
+
+  margin-bottom: 1rem;
+
+}
+
+.section-title {
+
+  font-size: clamp(
+      2rem,
+      4vw,
+      3rem
+  );
+
+  line-height: 1.05;
+
+}
+
+.about-content {
+
+  display: grid;
+
+  gap: 1.8rem;
+
+  max-width: 70ch;
+
+}
+
+.about-content p {
+
+  color: var(--color-muted);
+
+  font-size: 1.08rem;
 
 }

@@ -1,0 +1,18 @@
+.reveal {
+
+  opacity: 0;
+
+  transform: translateY(28px);
+
+  transition: opacity .7s,
+  transform .7s;
+
+}
+
+.reveal.show {
+
+  opacity: 1;
+
+  transform: none;
+
+}

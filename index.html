@@ -11,7 +11,11 @@
   <link rel="stylesheet" href="styles/sections.css">
   <link rel="stylesheet" href="styles/responsive.css">
   <link rel="stylesheet" href="styles/components.css">
-  <script src="scripts/" defer></script>
+  <link rel="stylesheet" href="styles/animation.css">
+  <link rel="stylesheet" href="styles/reveal.css">
+  <script type="module" src="scripts/main.js" defer></script>
+  <!--script src="scripts/stagger.js" defer></script>
+  <script src="scripts/reveal.js" defer></script-->
 </head>
 <body>
 <header class="hero">
@@ -33,11 +37,34 @@
     </div>
   </div>
 </header>
+<section class="flow">
+  <div class="container">
+    <div class="flow-grid">
+      <article class="flow-item reveal">
+        <i class="fa-solid fa-hand-pointer"></i>
+        <h3>Válassz</h3>
+        <p>
+          Válaszd ki, amire vágysz.
+        </p>
+      </article>
+      <article class="flow-item reveal">
+        <i class="fa-solid fa-credit-card"></i>
+        <h3>Fizess</h3>
+        <p>Fizesd ki gyorsan és biztonságosan.</p>
+      </article>
+      <article class="flow-item reveal">
+        <i class="fa-solid fa-mug-hot"></i>
+        <h3>Kész</h3>
+        <p>A gép elkészíti, Őn élvezi.</p>
+      </article>
+    </div>
+  </div>
+</section>
 <section class="about" id="about">
   <div class="container about-grid">
     <aside class="section-intro">
       <p class="section-kicker">Rólunk</p>
-      <h2 class="section-title">Automaták, amelyekre számíthat.</h2>
+      <h2 class="section-title">Milwaycoffe Kft.</h2>
     </aside>
     <article class="about-content">
       <p>Milwaycoffee Kft. fő profilja automaták üzemeltetése, bérbeadása, eladása és karbantartása.</p>
@@ -58,46 +85,83 @@
       <p class="section-kicker">Szolgáltatások</p>
       <h2 class="section-title">Automaták minden igényre</h2>
     </header>
-    <div class="services-grid">
+    <div class="services-grid stagger">
       <article class="card reveal">
         <div class="card-icon">
           <i class="fa-solid fa-mug-hot"></i>
         </div>
-        <h3>Kávéautomaták</h3>
-        <p>
-          Friss kávé,
-          prémium alapanyagok,
-          megbízható működés.
-        </p>
+        <h3>Kávé & forró italok</h3>
+        <p>Friss kávé minden nap</p>
       </article>
       <article class="card reveal">
         <div class="card-icon">
           <i class="fa-solid fa-cookie-bite"></i>
         </div>
-        <h3>Snack automaták</h3>
-        <p>
-          Ételek,
-          snackek,
-          gyors kiszolgálás.
-        </p>
+        <h3>Snack & étel</h3>
+        <p>Gyors falatok útközben.</p>
       </article>
       <article class="card reveal">
         <div class="card-icon">
           <i class="fa-solid fa-bottle-water"></i>
         </div>
         <h3>Hideg italok</h3>
-        <p>Üdítők,
-          ásványvizek,
-          energiaitalok.</p>
+        <p>Frissítő italok azonnal.</p>
       </article>
       <article class="card reveal">
         <div class="card-icon">
           <i class="fa-solid fa-gears"></i>
         </div>
-        <h3>Egyedi megoldások</h3>
-        <p>Az igényekhez
-          igazított
-          vending rendszerek.</p>
+        <h3>Speciális automaták</h3>
+        <p>Egyedi megoldások</p>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="container">
+    <header class="section-header reveal">
+      <p class="section-kicker">
+        Kapcsolat
+      </p>
+      <h2 class="section-title">
+        Vegye fel velünk a kapcsolatot
+      </h2>
+    </header>
+    <div class="contact-grid">
+      <article class="contact-card reveal">
+        <h3>Zabos Zita</h3>
+        <span>Ügyvezető</span>
+        <a href="tel:+36301903473">
+          +36 30 190 3473
+        </a>
+        <a href="mailto:zitazabos@milway.hu">
+          zitazabos@milway.hu
+        </a>
+        <a href="mailto:rendeles@milway.hu">
+          rendeles@milway.hu
+        </a>
+      </article>
+      <article class="contact-card reveal">
+        <h3>Kopor Attila</h3>
+        <span>Technikus</span>
+        <a href="tel:+36205230245">
+          +36 20 523 0245
+        </a>
+        <a href="mailto:vending@milway.hu">
+          vending@milway.hu
+        </a>
+      </article>
+      <article class="company-card reveal">
+        <h3>Milwaycoffee Kft.</h3>
+        <dl>
+          <dt>Cím</dt>
+          <dd>
+            2142 Nagytarcsa<br>
+            Alsó Ipari körút 8.
+          </dd>
+          <dt>Adószám</dt>
+          <dd>23374195-2-13</dd>
+        </dl>
       </article>
     </div>
   </div>

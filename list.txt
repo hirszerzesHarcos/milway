@@ -1,0 +1,23 @@
+milway-landing/
+
+index.html
+
+assets/
+    hero-background.webp
+
+css/
+    reset.css
+    variables.css
+    base.css
+    layout.css
+    components.css
+    sections.css
+    animations.css
+    responsive.css
+
+js/
+    main.js
+    reveal.js
+    stagger.js
+
+README.md

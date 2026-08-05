@@ -1,4 +1,4 @@
-.container {
+/*.container {
 
   width: min(calc(100% - 48px), var(--container)
   );
@@ -11,4 +11,4 @@ section {
 
   padding-block: var(--section-space);
 
-}
+}*/

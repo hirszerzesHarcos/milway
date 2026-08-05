@@ -1,4 +1,4 @@
-.card {
+/*.card {
 
   background: linear-gradient(
       180deg,
@@ -23,7 +23,7 @@
 
 }*/
 
-.card:hover {
+/*.card:hover {
 
   transform: translateY(-8px);
 
@@ -158,4 +158,4 @@
 
   }
 
-}
+}*/

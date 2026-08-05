@@ -1,4 +1,4 @@
-*,
+/**,
 *::before,
 *::after {
   margin: 0;
@@ -28,4 +28,4 @@ a {
 
 ul {
   list-style: none;
-}
+}*/

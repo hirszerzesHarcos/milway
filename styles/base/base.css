@@ -1,0 +1,6 @@
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, sans-serif;;
+  line-height: 1.6;
+}

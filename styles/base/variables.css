@@ -1,0 +1,42 @@
+:root {
+  /* Colors */
+  --color-bg: #141514;
+  /*  --color-surface: #1d1f1d;
+    --color-card: rgba(255, 255, 255, .05);
+  */
+  --color-text: #fff;
+  /*  --color-muted: #b4b4b4;
+
+    --color-border: rgba(255, 255, 255, .08);
+
+    --color-gold: #c39a67;
+    --color-gold-light: #e1bb87;
+
+    /* Layout */
+  /*
+    --container: 1400px;
+
+    --section-space: clamp(5rem, 9vw, 9rem);
+
+    --content-width: 620px;
+
+    /* Radius */
+  /*
+    --radius-s: 12px;
+    --radius-m: 18px;
+    --radius-l: 28px;
+
+    /* Shadows */
+  /*
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, .25);
+
+    --shadow-hover: 0 18px 40px rgba(0, 0, 0, .35);
+
+    /* Motion */
+  /*
+    --transition-fast: .2s;
+
+    --transition: .35s;
+
+    --transition-slow: .7s;*/
+}

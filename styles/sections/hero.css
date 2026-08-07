@@ -1,11 +1,12 @@
 .hero {
   min-height: 100lvh;
-  background-image: url("../../assets/images/hero/hero-background.webp");
+  background-image: linear-gradient(90deg, rgba(20, 21, 20, 1) 0%, rgba(20, 21, 20, .96) 28%, rgba(20, 21, 20, .70) 42%, rgba(20, 21, 20, .15) 62%, rgba(20, 21, 20, .05) 100%), url("../../assets/images/hero/hero-background.webp");
   background-position: right center;
-  /*background-repeat: no-repeat;*/
+  /* Egyetlen, teljes felületet kitöltő hero-kép. */
+  /* background-repeat: no-repeat; */
   background-size: cover;
-  /*display: flex;
-  align-items: center;*/
+  display: flex;
+  align-items: center;
 }
 
 /*

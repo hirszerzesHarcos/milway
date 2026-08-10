@@ -4,6 +4,16 @@
   height: 2rem;
 }
 
+/*.company-card dl {
+  display: grid;
+  grid-template-columns:auto 1fr;
+  gap: 1rem;
+}*/
+
+.company-card dl dt, .company-card dl dd {
+  background-color: #8AC007;
+}
+
 /*.card {
 
   background: linear-gradient(
@@ -112,15 +122,7 @@
   color: white;
 }
 */
-dl, dt, dd {
-  margin: 0;
-}
 
-.company-card dl {
-  display: grid;
-  grid-template-columns:auto 1fr;
-  gap: 1rem;
-}
 
 /*
 .company-card dt {

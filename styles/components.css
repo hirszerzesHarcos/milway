@@ -1,3 +1,9 @@
+.icon {
+  /*display: block;*/
+  width: auto;
+  height: 2rem;
+}
+
 /*.card {
 
   background: linear-gradient(
@@ -71,83 +77,58 @@
 
 .contact-card,
 .company-card {
-
   display: flex;
-
   flex-direction: column;
-
   gap: .8rem;
-
   padding: 2rem;
-
   border-radius: var(--radius-l);
-
   background: var(--color-card);
-
   border: 1px solid var(--color-border);
-
   transition: all var(--transition);
-
 }
 
 .contact-card:hover,
 .company-card:hover {
-
   transform: translateY(-6px);
-
   box-shadow: var(--shadow-hover);
-
 }
 
 .contact-card h3,
 .company-card h3 {
-
   font-size: 1.45rem;
-
 }
 
 .contact-card span {
-
   color: var(--color-gold);
-
   margin-bottom: 1rem;
-
 }
 
 .contact-card a {
-
   color: var(--color-muted);
-
   transition: color var(--transition-fast);
-
 }
 
 .contact-card a:hover {
-
   color: white;
-
+}
+*/
+dl, dt, dd {
+  margin: 0;
 }
 
 .company-card dl {
-
   display: grid;
-
   grid-template-columns:auto 1fr;
-
   gap: 1rem;
-
 }
 
+/*
 .company-card dt {
-
   color: var(--color-gold);
-
 }
 
 .company-card dd {
-
   color: var(--color-muted);
-
 }
 
 @media (max-width: 1023px) {

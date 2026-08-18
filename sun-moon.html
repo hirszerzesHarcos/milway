@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day-Night Toggle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMcB8pE7ZbShUgKxY9R+uaZkZ5kXy/tO6zzD2dn" crossorigin="anonymous">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      transition: background 0.8s ease, filter 0.8s ease;
+      overflow: hidden;
+    }
+
+    .container {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      text-align: center;
+    }
+
+    .toggle-button {
+      width: 100px;
+      height: 50px;
+      background: #333;
+      border-radius: 25px;
+      position: relative;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+    }
+
+    .toggle-circle {
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      transition: all 0.5s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Icons for Sun and Moon on Button */
+    .button-sun, .button-moon {
+      font-size: 2rem;
+    }
+
+    .button-sun {
+      color: #FFD700;
+    }
+
+    .button-moon {
+      color: #B0C4DE;
+    }
+
+    /* Large Sun and Moon at Top Left */
+    .large-sun, .large-moon {
+      font-size: 10rem;
+      position: absolute;
+      top: 20px;
+      right: 10px;
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .large-sun {
+      color: #FFD700;
+      opacity: 0;
+    }
+
+    .large-moon {
+      color: #B0C4DE;
+      opacity: 0;
+    }
+
+    /* Day and Night styles */
+    .day .large-sun {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .night .large-moon {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .day .image {
+      filter: brightness(1.5) contrast(1.2) saturate(2);
+    }
+
+    .night .image {
+      filter: brightness(0.7) contrast(1) saturate(1);
+    }
+
+    .image {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+
+    .moon-image {
+      height: 200px;
+      width: 200px;
+      filter: drop-shadow(1px 1px 20px white);
+    }
+
+    .sun-image {
+      height: 250px;
+      width: 300px;
+      filter: drop-shadow(2px 2px 40px rgb(206, 145, 23));
+    }
+
+    /* New styles for text */
+    .mode-text {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      transition: opacity 0.5s ease;
+    }
+
+    .day .mode-text {
+      opacity: 1;
+    }
+
+    .night .mode-text {
+      opacity: 0;
+    }
+
+    .night .mode-text-night {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="day">
+<img src="./city.jpg" class="image" alt="">
+
+<div class="large-moon">
+  <img src="./moon2.gif" class="moon-image" alt="">
+</div>
+<div class="large-sun">
+  <img src="./sun.gif" class="sun-image" alt="">
+</div>
+
+<div class="mode-text day-text">Good Morning! It's a beautiful day!</div>
+<div class="mode-text night-text night" style="opacity: 0;">Good Night! Sweet dreams!</div>
+
+<div class="container">
+  <div class="toggle-button" onclick="toggleDayNight()">
+    <div class="button-sun">&#x2600;</div>
+    <div class="button-moon">&#x1F319;</div>
+    <div class="toggle-circle"></div>
+  </div>
+</div>
+
+<script>
+  let isDay = true;
+
+  function toggleDayNight() {
+    const body = document.body;
+    const toggleCircle = document.querySelector('.toggle-circle');
+    const largeSun = document.querySelector('.large-sun');
+    const largeMoon = document.querySelector('.large-moon');
+    const dayText = document.querySelector('.day-text');
+    const nightText = document.querySelector('.night-text');
+
+    if (isDay) {
+      // Switch to night mode
+      body.classList.remove('day');
+      body.classList.add('night');
+      toggleCircle.style.transform = 'translateX(60px)';
+      dayText.style.opacity = '0';
+      nightText.style.opacity = '1';
+    } else {
+      // Switch to day mode
+      body.classList.remove('night');
+      body.classList.add('day');
+      toggleCircle.style.transform = 'translateX(0)';
+      dayText.style.opacity = '1';
+      nightText.style.opacity = '0';
+    }
+
+    isDay = !isDay;
+  }
+</script>
+</body>
+</html>

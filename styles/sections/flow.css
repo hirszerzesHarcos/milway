@@ -1,17 +1,17 @@
 .flow {
-  background: linear-gradient(
-    180deg, transparent, rgba(255, 255, 255, .02), transparent
-  );
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, .02), transparent);
 }
-
+.flow .container{
+  background-color: #3c3c3c;
+}
 .flow-grid {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 0.1875rem) 1fr;
 }
 
 .flow-item {
   text-align: left;
+  background-color: #1e1e1e;
 }
 
 .flow-item i {

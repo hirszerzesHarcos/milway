@@ -1,6 +1,6 @@
 :root {
   /* Colors */
-  --color-bg: #141514;
+  --color-bg: #232323;
   /*  --color-surface: #1d1f1d;
     --color-card: rgba(255, 255, 255, .05);
   */
@@ -38,4 +38,5 @@
     --transition: .35s;
 
     --transition-slow: .7s;*/
+  --font-size-normal: 1.3rem;
 }

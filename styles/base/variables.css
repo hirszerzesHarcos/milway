@@ -5,10 +5,10 @@
     --color-card: rgba(255, 255, 255, .05);
   */
   --color-text: #fff;
-  /*  --color-muted: #b4b4b4;
-
-    --color-border: rgba(255, 255, 255, .08);
-*/
+  --color-muted: #b4b4b4;
+  /*
+      --color-border: rgba(255, 255, 255, .08);
+  */
   --color-gold: #c39a67;
   /*  --color-gold-light: #e1bb87;
 
@@ -38,5 +38,6 @@
     --transition: .35s;
 
     --transition-slow: .7s;*/
-  --font-size-normal: 1.3rem;
+  --font-size-normal: 1.22rem;
+  --font-size-flow-h3: 1.6rem;
 }

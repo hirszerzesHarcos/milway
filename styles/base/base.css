@@ -1,7 +1,7 @@
 body {
   background: var(--color-bg);
   color: var(--color-text);
-  font-family: system-ui, sans-serif;
+  font-family: Inter, sans-serif;
   font-size: var(--font-size-normal);
   /*line-height: 1.6;*/
   position : relative;
@@ -11,7 +11,7 @@ body img {
   display: block;
   width: 1590px;
   position: absolute;
-  object-position: 0 140px;
+  object-position: -166px 318px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0.5;

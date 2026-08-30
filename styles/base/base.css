@@ -9,9 +9,9 @@ body {
 
 body > img {
   display: block;
-  width: 1590px;
+  width: 1400px;
   position: absolute;
-  object-position: 0 130px;
+  object-position: 0 89px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0.3;

@@ -4,18 +4,30 @@
 
 .flow .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr 0.1875rem) 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.card {
-  margin: 2rem;
-  background-color: #2e1e1e;
+.flow .card {
+  margin: 3rem 4rem;
 }
 
-.flow .card.grid {
+.flow .card {
+  position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
   column-gap: 2rem;
+}
+
+.flow .card:not(:last-child):after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: calc(-4rem - 1px);
+  width: 2px;
+  background: red;
 }
 
 .flow .card .frame {
@@ -26,7 +38,7 @@
   width: 7.5rem;
   height: 7.5rem;
   grid-row: 1/4;
-  border: 1px solid #e1e1e1;
+  border: 2px solid #e1e1e1;
   border-radius: 50%;
 }
 
@@ -36,19 +48,20 @@
 }
 
 .flow .card h2 {
-  margin: 0;
+  margin: 0 0 .8rem;
   font-size: var(--font-size-flow-h2);
   line-height: 1.2;
 }
 
 .flow .card h3 {
-  margin: 0;
+  margin: 0 0 .8rem;
   font-size: var(--font-size-flow-h3);
   line-height: 1.2;
 }
 
 
 .flow .card p {
+  letter-spacing: 1px;
   margin: 0;
   color: var(--color-muted);
 }

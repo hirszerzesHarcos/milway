@@ -8,7 +8,7 @@
 }
 
 .flow .card {
-  margin: 3rem 4rem;
+  margin: 3rem 2rem;
 }
 
 .flow .card {
@@ -25,9 +25,10 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  right: calc(-4rem - 1px);
+  right: calc(-2rem - 1px);
   width: 2px;
-  background: red;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 100%);
+  filter: blur(1px);
 }
 
 .flow .card .frame {
@@ -40,6 +41,7 @@
   grid-row: 1/4;
   border: 2px solid #e1e1e1;
   border-radius: 50%;
+  /*filter: blur(1px);*/
 }
 
 .flow .card .frame img {
@@ -48,9 +50,9 @@
 }
 
 .flow .card h2 {
-  margin: 0 0 .8rem;
+  margin: 0 0 1rem;
   font-size: var(--font-size-flow-h2);
-  line-height: 1.2;
+  line-height: 1;
 }
 
 .flow .card h3 {

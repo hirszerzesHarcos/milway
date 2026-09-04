@@ -62,14 +62,4 @@
 
   }
 
-}
-
-@media (max-width: 767px) {
-
-  .flow-grid {
-
-    grid-template-columns:1fr;
-
-  }
-
 }*/

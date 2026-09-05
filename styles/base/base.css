@@ -11,7 +11,7 @@ body > img {
   display: block;
   width: 1590px;
   position: absolute;
-  object-position: 0 89px;
+  object-position: 0 350px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0.3;

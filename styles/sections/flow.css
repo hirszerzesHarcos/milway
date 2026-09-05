@@ -15,7 +15,7 @@
   grid-template-columns: auto 1fr;
   grid-template-rows: subgrid;
   grid-row: span 3;
-  gap: 2rem;
+  column-gap: 2rem;
 }
 
 .flow .card:not(:last-child):after {
@@ -74,11 +74,8 @@
   line-height: 1.2;
 }
 
-
 .flow .card p {
   letter-spacing: 1px;
   margin: 0;
   color: var(--color-muted);
 }
-
-/*linear-gradient(180deg, transparent, rgba(255, 255, 255, .02), transparent)*/

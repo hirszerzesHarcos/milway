@@ -1,0 +1,7 @@
+.section-kicker {
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}

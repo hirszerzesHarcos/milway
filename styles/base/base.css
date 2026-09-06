@@ -8,11 +8,19 @@ body {
 }
 
 body > img {
-  display: block;
+  display: none;
   width: 1590px;
   position: absolute;
   object-position: 0 350px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0.3;
+}
+
+section {
+  background: #777;
+}
+
+.container {
+  background: #33b5e5;
 }

@@ -1,8 +1,8 @@
+section {
+  padding-block: var(--section-space);
+}
+
 .container {
   width: min(calc(100% - 48px), var(--container));
   margin: 0 auto;
 }
-
-/*section {
-  padding-block: var(--section-space);
-}*/

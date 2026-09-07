@@ -11,10 +11,10 @@ body > img {
   display: none;
   width: 1590px;
   position: absolute;
-  object-position: 0 350px;
+  object-position: 0 200px;
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 section {

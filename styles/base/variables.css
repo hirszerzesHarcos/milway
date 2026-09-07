@@ -14,7 +14,8 @@
 
     /* Layout */
   --container: 1400px;
-  /*--section-space: clamp(5rem, 9vw, 9rem);*/
+  --section-space: 3rem;
+  --section-indent: 2rem;
   /*
         --content-width: 620px;
 

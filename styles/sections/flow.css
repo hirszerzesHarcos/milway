@@ -1,23 +1,22 @@
 section.flow {
   background: #1e1e1e;
-  /*padding: 0;*/
+  padding: 0;
 }
 
 .flow .cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 6rem 4rem;
 }
 
 .flow .card {
-  /*margin: var(--section-space) var(--section-indent);*/
+  margin: var(--section-space) var(--flow-section-indent);
   min-width: 300px;
   position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: subgrid;
   grid-row: span 3;
-  gap: 0 2rem;
+  column-gap: var(--flow-section-indent);
 }
 
 .flow .card:not(:last-child):after {
@@ -25,7 +24,7 @@ section.flow {
   position: absolute;
   height: 2px;
   left: 0;
-  bottom: calc(-3rem - 1px);
+  bottom: calc(-1 * var(--section-space) - 1px);
   right: 0;
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 100%);
   filter: blur(2px);
@@ -33,9 +32,9 @@ section.flow {
 }
 
 .flow .card .frame {
-  margin-top: .5rem;
-  width: 7.5rem;
-  height: 7.5rem;
+  margin-top: .3rem;
+  width: calc(7.5rem + 4px);
+  height: calc(7.5rem + 4px);
   grid-row: 1/4;
   display: flex;
   justify-content: center;

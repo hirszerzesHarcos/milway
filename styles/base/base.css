@@ -8,7 +8,7 @@ body {
 }
 
 body > img {
-  display: none;
+  /*display: none;*/
   width: 1590px;
   position: absolute;
   object-position: 0 200px;

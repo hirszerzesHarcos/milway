@@ -1,9 +1,5 @@
-.section-intro {
+.section-intro, .section-header {
   padding-left: 1rem;
-  position: sticky;
-}
-
-.section-header {
   position: relative;
 }
 
@@ -17,14 +13,20 @@
 }
 
 .section-kicker {
+  margin-top: 0;
   color: var(--color-gold);
   text-transform: uppercase;
   letter-spacing: .2em;
   font-size: 1.3rem;
 }
 
+.section-intro .section-title {
+  font-size: clamp(2.2rem, calc(-0.739rem + 13.0612vw), 3rem);
+  /*font-size: 3rem;*/
+}
+
 .section-title {
-  /*margin-top: 0;*/
-  font-size: 3rem;
-  vertical-align: top;
+  margin-top: 0;
+  padding-bottom: 2rem;
+  font-size: 2.4rem;
 }

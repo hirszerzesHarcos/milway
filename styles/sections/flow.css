@@ -5,11 +5,10 @@ section.flow {
 
 .flow .cards {
   display: grid;
-  grid-template-columns: 1fr;
 }
 
 .flow .card {
-  margin: var(--section-space) var(--flow-section-indent);
+  margin: var(--section-space) 0;
   min-width: 300px;
   position: relative;
   display: grid;

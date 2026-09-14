@@ -1,0 +1,21 @@
+@media (min-width: 800px) {
+  .about-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 4rem;
+  }
+
+  .section-intro {
+    position: sticky;
+    top: 3rem;
+  }
+
+  .section-intro .section-title {
+    font-size: clamp(2.2rem, calc(0.6rem + 3.2vw), 3rem);
+  }
+
+  .section-title {
+    margin: 0;
+  }
+}

@@ -22,7 +22,6 @@
 
 .section-intro .section-title {
   font-size: clamp(2.2rem, calc(-0.739rem + 13.0612vw), 3rem);
-  /*font-size: 3rem;*/
 }
 
 .section-title {

@@ -17,10 +17,6 @@ body > img {
   opacity: 0.5;
 }
 
-section:not(:first-of-type) {
-  background: #777;
-}
-
 .container:not(:first-of-type) {
   background: #33b5e5;
 }

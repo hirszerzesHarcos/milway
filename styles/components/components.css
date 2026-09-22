@@ -13,19 +13,25 @@
 }
 
 .section-kicker {
-  margin-top: 0;
+  margin: 0;
   color: var(--color-gold);
   text-transform: uppercase;
   letter-spacing: .2em;
   font-size: 1.3rem;
 }
 
-.section-intro .section-title {
-  font-size: clamp(2.2rem, calc(-0.739rem + 13.0612vw), 3rem);
+.section-intro .section-kicker {
+  padding-bottom: 1rem;
 }
 
-.section-title {
-  margin-top: 0;
-  padding-bottom: 2rem;
+.section-intro .section-title {
+  font-size: clamp(2.2rem, calc(-0.739rem + 13.0612vw), 3rem);
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.section-header .section-title {
+  margin: 0;
+  padding-bottom: 1rem;
   font-size: 2.4rem;
 }

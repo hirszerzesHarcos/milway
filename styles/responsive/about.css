@@ -14,8 +14,4 @@
   .section-intro .section-title {
     font-size: clamp(2.2rem, calc(0.6rem + 3.2vw), 3rem);
   }
-
-  .section-title {
-    margin: 0;
-  }
 }

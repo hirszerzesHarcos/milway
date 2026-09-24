@@ -35,9 +35,3 @@
   padding-bottom: 1rem;
   font-size: 2.4rem;
 }
-
-.services-grid, .contact-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}

@@ -1,3 +1,39 @@
+<section class="flow">
+  <div class="container cards">
+    <article class="card reveal">
+    <article class="card reveal">
+    <article class="card reveal">
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="container about-grid">
+    <aside class="section-intro">
+    <article class="about-content">
+  </div>
+</section>
+<section class="services" id="services">
+  <div class="container services-grid">
+    <header class="section-header reveal">
+    <div class="cards stagger">
+      <article class="card reveal">
+      <article class="card reveal">
+      <article class="card reveal">
+      <article class="card reveal">
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <header class="section-header reveal">
+    <div class="cards">
+      <article class="card reveal">
+      <article class="card reveal">
+      <article class="card reveal">
+    </div>
+  </div>
+</section>
+
+
 milway-landing/
 
 index.html

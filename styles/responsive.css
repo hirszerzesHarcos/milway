@@ -1,65 +1,33 @@
 /*@media (max-width: 1023px) {
-
   .hero {
-
     min-height: 90svh;
-
   }
-
   .hero-title {
-
     max-width: 12ch;
-
   }
-
 }
 
 @media (max-width: 767px) {
-
   .hero {
-
     text-align: center;
-
   }
-
   .hero-content {
-
     margin-inline: auto;
-
   }
-
   .hero-title {
-
     max-width: none;
-
   }
-
   .hero-description {
-
     margin-inline: auto;
-
   }
-
   .hero-actions {
-
     justify-content: center;
-
   }
-
 }
 
 @media (max-width: 1023px) {
-
-  .about-grid {
-
-    grid-template-columns:1fr;
-
-  }
-
   .section-intro {
-
     position: static;
-
   }
 
 }*/

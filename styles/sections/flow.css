@@ -3,11 +3,11 @@ section.flow {
   padding: 0;
 }
 
-.flow .cards {
+.flow .steps {
   display: grid;
 }
 
-.flow .card {
+.flow .step {
   margin: var(--section-space) 0;
   min-width: 300px;
   position: relative;
@@ -18,7 +18,7 @@ section.flow {
   column-gap: var(--flow-section-indent);
 }
 
-.flow .card:not(:last-child):after {
+.flow .step:not(:last-child):after {
   content: "";
   position: absolute;
   height: 2px;
@@ -30,7 +30,7 @@ section.flow {
   clip-path: inset(0);
 }
 
-.flow .card .frame {
+.flow .step .frame {
   margin-top: .3rem;
   width: calc(7.5rem + 4px);
   height: calc(7.5rem + 4px);
@@ -41,7 +41,7 @@ section.flow {
   position: relative;
 }
 
-.flow .card .frame:before {
+.flow .step .frame:before {
   content: "";
   position: absolute;
   top: 0;
@@ -56,25 +56,25 @@ section.flow {
   filter: blur(2px);
 }
 
-.flow .card .icon {
+.flow .step .icon {
   width: 50%;
   height: auto;
 }
 
-.flow .card h2 {
+.flow .step h2 {
   margin: 0 0 1rem;
   font-size: var(--font-size-flow-h2);
   color: var(--color-gold);
   line-height: 1;
 }
 
-.flow .card h3 {
+.flow .step h3 {
   margin: 0 0 .8rem;
   font-size: var(--font-size-flow-h3);
   line-height: 1.2;
 }
 
-.flow .card p {
+.flow .step p {
   letter-spacing: 1px;
   margin: 0;
   color: var(--color-muted);

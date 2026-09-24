@@ -1,23 +1,22 @@
 :root {
   /* Colors */
   --color-bg: #232323;
-  /*  --color-surface: #1d1f1d;
-    --color-card: rgba(255, 255, 255, .05);
-  */
+  /*  --color-surface: #1d1f1d;*/
+  --color-card: rgba(255, 255, 255, .05);
   --color-text: #fff;
   --color-muted: #b4b4b4;
-  --color-border: rgba(255, 255, 255, .08);
+  --color-border: rgba(255, 255, 255, .01);
   --color-gold: #c39a67;
   /*  --color-gold-light: #e1bb87;
 
-    /* Layout */
+  /* Layout */
   --container: 1400px;
   --section-space: 3rem;
   --flow-section-indent: 2rem;
   /*
         --content-width: 620px;
 
-        /* Radius */
+  /* Radius */
   /*
     --radius-s: 12px;
     --radius-m: 18px;*/
@@ -29,13 +28,13 @@
 
     --shadow-hover: 0 18px 40px rgba(0, 0, 0, .35);
 
-    /* Motion */
+  /* Motion */
   /*
     --transition-fast: .2s;
-
-    --transition: .35s;
-
-    --transition-slow: .7s;*/
+*/
+  --transition: .35s;
+  /*
+      --transition-slow: .7s;*/
   --font-size-normal: 1.22rem;
   --font-size-flow-h2: 2rem;
   --font-size-flow-h3: 1.6rem;

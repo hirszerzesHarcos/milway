@@ -1,15 +1,15 @@
 @media (min-width: 412px) {
-  .flow .card {
+  .flow .step {
     margin-inline: var(--flow-section-indent);
   }
 }
 
 @media (min-width: 800px) {
-  .flow .cards {
+  .flow .steps {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .flow .card:nth-child(odd):not(:last-child):after {
+  .flow .step:nth-child(odd):not(:last-child):after {
     width: 2px;
     height: auto;
     top: 0;
@@ -19,17 +19,17 @@
     background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 100%);
   }
 
-  .flow .card:nth-child(even):not(:last-child):after {
+  .flow .step:nth-child(even):not(:last-child):after {
     left: calc(-100% - 4rem);
   }
 }
 
 @media (min-width: 1200px) {
-  .flow .cards {
+  .flow .steps {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .flow .card:nth-child(even):not(:last-child)::after {
+  .flow .step:nth-child(even):not(:last-child)::after {
     width: 2px;
     height: auto;
     top: 0;

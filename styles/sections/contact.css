@@ -1,5 +1,33 @@
+.contact {
+  position: relative; /*????*/
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+}
+
+.contact .card h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.card a, .card dl {
+  color: var(--color-muted);
+}
+
+.contact .card span {
+  display: block; /*????*/
+  color: var(--color-gold);
+  margin-bottom: 1.5rem;
+}
+
+.contact .card a {
+  color: var(--color-muted);
+  transition: color var(--transition-fast);
+}
+
+.contact .card a:hover {
+  color: white;
 }

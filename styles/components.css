@@ -23,41 +23,25 @@
   box-shadow: var(--shadow-hover);
 
 }
-
-.card-icon {
-
+*/
+/*.card-icon {
   width: 58px;
-
   aspect-ratio: 1;
-
   display: grid;
-
   place-items: center;
-
   border-radius: 50%;
-
   margin-bottom: 1.5rem;
-
   background: rgba(195, 154, 103, .12);
-
   color: var(--color-gold);
-
   font-size: 1.3rem;
-
-}
-
+}*/
+/*
 .card h3 {
-
   margin-bottom: .8rem;
-
-  font-size: 1.35rem;
-
 }
 
 .card p {
-
   color: var(--color-muted);
-
 }
 
 .contact-card,
@@ -81,20 +65,6 @@
 .contact-card h3,
 .company-card h3 {
   font-size: 1.45rem;
-}
-
-.contact-card span {
-  color: var(--color-gold);
-  margin-bottom: 1rem;
-}
-
-.contact-card a {
-  color: var(--color-muted);
-  transition: color var(--transition-fast);
-}
-
-.contact-card a:hover {
-  color: white;
 }
 */
 

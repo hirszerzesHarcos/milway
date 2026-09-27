@@ -27,9 +27,7 @@
   --shadow-hover: 5px 15px 15px rgba(0, 0, 0, .55);
 
   /* Motion */
-  /*
-    --transition-fast: .2s;
-*/
+  --transition-fast: .2s;
   --transition: .35s;
   /*
       --transition-slow: .7s;*/

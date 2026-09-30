@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+  .contact .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact .card.company {
+    grid-column: span 2;
+  }
+
+}

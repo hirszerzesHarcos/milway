@@ -1,10 +1,11 @@
 .contact {
-  position: relative; /*????*/
+  position: relative; /*?? ráillesztett kép miatt??*/
 }
 
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
+  align-items: start;
   gap: 2rem;
 }
 
@@ -13,21 +14,25 @@
   margin-bottom: 0;
 }
 
-.card a, .card dl {
+.contact .card {
+  display: grid;
+}
+
+.contact .card a, .contact .card dl {
   color: var(--color-muted);
 }
 
 .contact .card span {
-  display: block; /*????*/
   color: var(--color-gold);
   margin-bottom: 1.5rem;
 }
 
 .contact .card a {
-  color: var(--color-muted);
+  text-decoration-color: rgba(244, 241, 236, 0.14);
   transition: color var(--transition-fast);
 }
 
 .contact .card a:hover {
-  color: white;
+  color: var(--color-gold-light);
+  text-decoration-color: rgba(216, 185, 143, 0.45);
 }

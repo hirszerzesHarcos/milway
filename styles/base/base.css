@@ -7,7 +7,7 @@ body {
 }
 
 .contact > img {
-  display: none;
+  /*display: none;*/
   width: 1590px;
   position: absolute;
   object-position: -240px -1834px;

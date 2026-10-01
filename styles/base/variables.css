@@ -19,10 +19,9 @@
         --content-width: 620px;
 
   /* Radius */
-  /*
-    --radius-s: 12px;
-    --radius-m: 18px;*/
-  --radius-l: 28px;
+  --radius-s: 12px;
+  /*--radius-m: 18px;
+  --radius-l: 28px;*/
 
   /* Shadows */
   --shadow-soft: 5px 5px 10px rgba(0, 0, 0, .35);

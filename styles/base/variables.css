@@ -5,7 +5,7 @@
   --color-card: rgba(255, 255, 255, .05);
   --color-text: #fff;
   --color-muted: #b4b4b4;
-  --color-border: rgba(255, 255, 255, .01);
+  --color-border: rgba(255, 255, 255, .08);
   --color-gold: #c39a67;
   --color-gold-light: #e1bb87;
   --color-link: #d0d0d0;
@@ -19,8 +19,10 @@
         --content-width: 620px;
 
   /* Radius */
-  --radius-s: 12px;
-  /*--radius-m: 18px;
+  --radius-s: 5px;
+  --radius-l: 12px;
+  /*s: 12px
+  --radius-m: 18px;
   --radius-l: 28px;*/
 
   /* Shadows */

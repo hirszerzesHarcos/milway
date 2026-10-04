@@ -1,0 +1,7 @@
+.btn {
+  padding: .95rem 1.1rem;
+  border-radius: var(--radius-s);
+  font-size: 1.1em;
+  text-align: center;
+  transition: transform var(--transition), background var(--transition), color var(--transition), border-color var(--transition);
+}

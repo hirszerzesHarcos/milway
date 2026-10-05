@@ -5,4 +5,3 @@ document.addEventListener("DOMContentLoaded", () => {
   initStagger();
   initReveal();
 });
-console.log("main js betöltve");
